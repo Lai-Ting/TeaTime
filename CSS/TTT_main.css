@@ -1,0 +1,149 @@
+/* section */
+.carousel-item>img {
+    width: 100%;
+}
+
+.carousel {
+    margin: 1% 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #A2A629;
+    padding: 15%;
+    border-radius: 40%;
+}
+
+section div h2{
+    color: #401801;
+    font-weight: 600;
+}
+
+.section_Inform {
+    display: flex;
+}
+
+.Left_about,
+.Right_news {
+    flex: 50%;
+    color: #401801;
+    padding: 2%;
+}
+
+.fa-brands {
+    color: #A2A629;
+}
+
+.Right_news>p {
+    border-left: 2px solid #401801;
+    padding-left: 1%;
+    margin: 2% 10% 0 3%;
+    font-size: 1.5rem;
+}
+
+.Right_news>p:hover {
+    background-color: #A2A629;
+}
+
+.Right_news>p>a {
+    text-decoration: none;
+    color: #401801;
+    margin-left: 1%;
+}
+
+.about {
+    background-color: #59483E;
+    border: 8px double #D99B66;
+    border-radius: 0 50px;
+    color: #D9A05B;
+    padding: 2%;
+    margin: 2% 0;
+    text-align: center;
+}
+
+.about h4 {
+    margin-top: 1%;
+}
+
+.about p {
+    color: #BFAE99;
+}
+
+/* 當季推薦 */
+.section_Product>h2{
+    margin: 3% 0 0 2%;
+    color: #401801;
+    font-weight: 600;
+}
+.section_Product>p{
+    margin-left: 2%;
+    font-size: 1.25rem;
+    color: #401801;
+}
+.list_info{
+    margin: 5% 0;
+    text-align: center;
+}
+.list_info>h3{
+    color: #401801;
+    font-weight:bold;
+}
+.list_info>p{
+    margin-top: -3%;
+    color: rgb(155, 151, 151);
+}
+.section_Product .bestseller {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list {
+    flex: 30%;
+    max-width: 400px;
+    margin: 20px 0;
+}
+
+/* lightbox燈箱 */
+.lightbox {
+     position: absolute;
+    /* bottom: 0; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000066;
+    z-index: -1;
+    opacity: 0;
+}
+
+.lightbox:target {
+    z-index: 1;
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.lightbox>img {
+    width: 70%;
+}
+
+.bestseller>.list img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* nav下拉導覽列 調整 */
+.drop_down_color ul.drop_down_menu ul {
+    left: -30%;
+}
+
+.drop_down_color ul.drop_down_menu ul ul {
+    /*第三層以後的選單出現位置與第二層不同*/
+    top: 0%;
+    left: 80%;
+}
+
+#nav_supplier{
+    left: -20%;
+}

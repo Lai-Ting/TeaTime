@@ -1,0 +1,9 @@
+.drop_down_color ul.drop_down_menu ul {
+    left: -30%;
+}
+
+.drop_down_color ul.drop_down_menu ul ul {
+    /*第三層以後的選單出現位置與第二層不同*/
+    top: 0%;
+    left: 80%;
+}

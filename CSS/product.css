@@ -1,0 +1,154 @@
+.leftside {
+  height: 40%;
+  background-color: #59483E;
+  border: 5px double #D99B66;
+  border-radius: 0 0 50px;
+  padding: 20px 0;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 40%;
+  left: 40px;
+  overflow-x: hidden;
+}
+
+p.leftside_title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #D9A05B;
+  padding: 6px 8px 6px 20px;
+}
+
+.leftside>p>a {
+  font-size: 20px;
+  color: #F2D7B6;
+  display: block;
+  padding: 6px 8px 6px 20px;
+  text-decoration: none;
+}
+
+.leftside>p>a:hover {
+  background-color: #40342A;
+}
+
+.product {
+  display:flex;
+  /* outline: 3px solid red; */
+  flex-wrap: wrap;
+  justify-content:left;
+  margin-left:5%;
+}
+
+/* product card */
+.product_tea {
+  flex: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 20px;
+  max-width: 300px;
+  margin: 20px 50px;
+  text-align: left;
+  /* outline: 3px solid pink;   */
+}
+.product_tea:hover {
+  box-shadow: 10px 20px 8px 0 rgba(0,0,0,0.2);
+}
+h2 {
+  color: #401801;
+  text-align: center;
+  margin: 3% 0 1%;
+}
+p.supplier {
+  color: #401801;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 2%;
+}
+p.product_text{
+  margin: 3% 4% 5% 4%;
+}
+.green{
+  border-bottom: #A69F3F 5px solid;
+}
+.L_blue{
+  border-bottom: #589EA6 5px solid;
+}
+.H_blue{
+  border-bottom: #345259 5px solid;
+}
+.red{
+  border-bottom: #BF4136 5px solid;
+}
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 20px 20px 0 0;
+}
+#green,#L_blue,#H_blue,#red{
+  margin: 0 60% 1% 6% ;
+  padding: 2% 0 1% 1%;
+}
+#green{
+  border-bottom: #A69F3F 5px solid;
+  color: #A69F3F;
+}
+#L_blue{
+  border-bottom: #589EA6 5px solid;
+  color: #589EA6;
+}
+#H_blue{
+  border-bottom: #345259 5px solid;
+  color: #345259;
+}
+#red{
+  border-bottom: #BF4136 5px solid;
+  color: #BF4136;
+}
+
+/* 商品照片翻轉 */
+.card{
+  /*box-model*/
+  height: 300px;
+  width:300px;
+  /*for flip card*/
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip-card-container {
+  /*box-model*/
+  height:100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.front, .back{
+  /*display*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*box-model*/
+  height:100%;
+  width:100%;
+}
+.flip-card-container{
+  position: relative;
+  /*flip card*/
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.card:hover .flip-card-container{
+  transform: rotateY(180deg);
+}
+/* .flip-card{
+  transform: rotateY(180deg);
+} */
+.front{
+  position: absolute;
+  /*Flip Card*/
+  backface-visibility: hidden;
+}
+.back{
+  position: absolute;
+  /*Flip Card*/
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+}

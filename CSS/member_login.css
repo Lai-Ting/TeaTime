@@ -1,0 +1,94 @@
+.login_p{
+    font-size: 18px;
+}
+hr {
+    border: 1px solid #f1f1f1;
+    margin: 2% 0 3%;
+}
+
+input[type=text],
+input[type=password] {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 4%;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.modal {
+    display: flex;
+    height: 90vh;
+    margin: 5%;
+    box-shadow: 10px 20px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    border: 1px solid #A2A629;
+}
+
+button,
+.signup_btn {
+    border-radius: 30px;
+    font-weight: 600;
+    color: white;
+    padding: 3% 5%;
+    margin: 4% 0;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    width: 60%;
+    background-color: #A69F3F;
+    transition: width 1s;
+    margin: 5% 0;
+    font-size:20px ;
+}
+
+.signup_btn {
+    font-size: 18px;
+    width: 40%;
+    background-color: #A2A629;
+    transition: width 2s;
+    margin-top: 10%;
+}
+
+button:hover,
+.signup_btn:hover {
+    background-color: #589EA6;
+    width: 100%;
+}
+
+.imgcontainer {
+    flex: 1;
+}
+
+img.avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.container {
+    padding: 3% 5% 3% 3%;
+    flex: 1;
+}
+
+.container b {
+    font-size: 20px;
+}
+
+p.psw {
+    margin: -2% 0 2% 1%;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+
+    .cancelbtn {
+        width: 100%;
+    }
+}

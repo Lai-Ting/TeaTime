@@ -1,0 +1,67 @@
+div>h1,
+h2,
+h3,
+article {
+    /* outline: 3px solid salmon;觀察用 */
+    margin-top: 10px;
+    text-align: center;
+    color: #40140A;
+}
+
+section>div>img {
+    width: 80%;
+}
+
+.sixtea_center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+article {
+    margin: 20px 0 20px 0;
+}
+
+/* Overlay Image Title */
+div.sixtea {
+    display: flex;
+    position: relative;
+}
+
+div.sixtea_img {
+    flex: 1;
+    position: relative;
+    margin: 5px;
+}
+
+img.sixtea_overlay {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    background: rgb(61, 60, 60);
+    background: rgba(57, 57, 57, 0.5);
+    /* Black see-through */
+    color: #f1f1f1;
+    width: 100%;
+    transition: 0.5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sixtea_img:hover .overlay {
+    opacity: 1;
+}
+
+.jsy_from {
+    margin-top: 30px;
+    text-align: end;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>會員登入 | 時光茶敘</title>
+    <!-- 外部連結 -->
+    <!-- 字體 -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Noto+Sans+TC:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- css -->
+    <link rel="stylesheet" href="../CSS/TTT_main_template.css">
+    <link rel="stylesheet" href="../CSS/member_login.css">
+    <link rel="icon" type="image/x-icon" href="./main_img/cup_icon.ico">
+</head>
+
+<body>
+    <div id="body_Color">
+        <header>
+            <nav>
+                <div class="nav_Title">
+                    <a href="../Time_Tea_Time.html">
+                        <div class="title_Left">Time's Tea Time <br>
+                            <p class="Title_descript">享受不同差異 品嚐箇中滋味</p>
+                        </div>
+                    </a>
+                    <div class="title_Right">
+                        <!-- 搜尋欄 -->
+                        <!-- <form data-bookfinder-form>
+                            <input class="search-bar" type="text" name="search" id="search" placeholder="請輸入搜尋內容" />
+                            <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </form> -->
+
+                        <!-- 會員區域 -->
+                        <div class="circle_User">
+                            <a href="../TTT.member/TTT.member.html">
+                                <i class="fa-solid fa-circle-user"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 下拉選單 -->
+                <div class="drop_down_color">
+                    <ul class="drop_down_menu">
+                        <li><a href="../Time_Tea_Time.html">首頁</a>
+                        </li>
+                        <li><a style="background-color: #F2CAA7" ; href="./TTT.notion.html">公告 V</a>
+                            <ul>
+                                <li><a href="./TTT.notion.html">所有消息</a>
+                                </li>
+                                <li><a href="./TTT.sixtea.html">六大茶系 ></a>
+                                    <ul>
+                                        <li><a href="./sixtea_1_white.html">白茶</a>
+                                        </li>
+                                        <li><a href="./sixtea_2_green.html">綠茶</a>
+                                        </li>
+                                        <li><a href="./sixtea_3_yellow.html">黃茶</a>
+                                        </li>
+                                        <li><a href="./sixtea_4_blue.html">青茶</a>
+                                        </li>
+                                        <li><a href="./sixtea_5_red.html">紅茶</a>
+                                        </li>
+                                        <li><a href="./sixtea_6_black.html">黑茶</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a href="../TTT.product/product_tea.html">推薦選物</a>
+                        </li>
+                        <li><a href="../TTT.supplier/TTT.supplier.html">嚴選商家 V</a>
+                            <ul>
+                                <li><a href="../TTT.supplier/TTT.supplier.html">京盛宇</a>
+                                </li>
+                                <li><a href="../TTT.supplier/TTT.supplier.html">荼公子</a>
+                                </li>
+                                <li><a href="../TTT.supplier/TTT.supplier.html">谷芳</a>
+                                </li>
+                                <li><a href="../TTT.supplier/TTT.supplier.html">津鹿堂</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div>
+                <!-- Login入口 -->
+                <form action="" method="post" class="modal">
+                    <div class="imgcontainer">
+                        <img src="./member.jpg" alt="Avatar" class="avatar">
+                    </div>
+                    <div class="container">
+                        <h1>會員登入</h1>
+                        <p class="login_p">使用帳號密碼登入</p>
+                        <hr>
+                        <label for="uname"><b>使用者帳號</b></label>
+                        <input type="text" placeholder="請輸入帳號" name="uname" required>
+
+                        <label for="psw"><b>密碼</b></label>
+                        <input type="password" placeholder="請輸入密碼" name="psw" required>
+                        <p class="psw"><a href="#">忘記密碼？請點我</a></p>
+                        <label>
+                            <input type="checkbox" checked="checked" name="remember"> 保持登入（公用電腦不建議使用）
+                        </label>
+                        <br>
+                        <button type="submit">Login</button>
+                        
+                        <!-- 轉跳到註冊 -->
+                        <input type="button" class="signup_btn" onclick="location.href='./member_signup.html';" value="還不是會員？ 立即註冊" />
+
+                    </div>
+                </form>
+                <!-- Login結束 -->
+            </div>
+        </main>
+        <footer>
+            <div class="foot">
+                <div class="foot_content">
+                    <p class="foot_title">聯絡資訊</p>
+                    <p class="foot_map">408台中市南屯區公益路二段51號18樓
+                        <a href="https://www.google.com/maps/place/%E8%B3%87%E5%B1%95%E5%9C%8B%E9%9A%9B-%E5%8E%9F+%E8%B3%87%E7%AD%96%E6%9C%83-%E6%95%B8%E4%BD%8D%E6%95%99%E8%82%B2%E7%A0%94%E7%A9%B6%E6%89%80-%E4%B8%AD%E5%8D%80/@24.1505405,120.6510249,15z/data=!4m6!3m5!1s0x34693d9650422ae1:0x334dfd5796c49ff6!8m2!3d24.1505405!4d120.6510249!16s%2Fg%2F11c0vlvhxk?entry=ttu"
+                            target="_blank" rel="noreferrer noopener">
+                            <i class="fa-solid fa-location-dot"></i> 地圖</a>
+                    </p>
+                    <p>02-2292-2086</p>
+                </div>
+                <div class="foot_content">
+                    <p class="foot_title">服務時間</p>
+                    <p>週一至週日 08:30-19:00</p>
+                    <p>國定假日公休</p>
+
+                </div>
+                <div class="foot_content">
+                    <p class="foot_title">社群媒體</p>
+                    <!-- target="_blank"，用新的頁面開啟網址 -->
+                    <div><a class="foot_media" href="https://www.facebook.com/ispanTaipei" target="_blank" rel="noreferrer noopener">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a class="foot_media" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a class="foot_media" href="mailto:maylin@ispan.com.tw">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                <span class="totop">
+                    <a href="#">
+                        <i><i class="fa-solid fa-circle-up"></i></i>
+                    </a>
+                </span>
+            </div>
+        </footer>
+    </div>
+    <!-- icon -->
+    <script src="https://kit.fontawesome.com/8cbac28fde.js" crossorigin="anonymous"></script>
+    <script>
+        // 註冊表單: Get the modal
+        var modal = document.getElementById('id01');
+
+        // 註冊表單: When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

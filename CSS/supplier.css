@@ -1,0 +1,82 @@
+.supplier_img>img {
+    width: 90%;
+    margin: 0.5% 0 0.5% 3%;
+}
+
+.supplier_img{
+    flex: 50%;
+}
+.supplier_about{
+    flex: 50%;
+    padding: 1.5% 0 1.5% 3%;
+    font-size: 18px;
+    position: relative;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    margin-top: 2%;
+    background-color: #589EA6;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1%;
+    transition: 0.3s;
+    font-size: 20px;
+    color: #F2E6D8;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #345259;
+    font-size: 25px;
+    color: #F2E6D8;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #589EA6;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: flex;
+    border: 3px solid #589EA6;
+    border-top: none;
+}
+/* 廠商介紹 */
+.supplier_name{
+    font-size: 30px;
+    font-weight: 700;
+    color: #401801;
+    margin-bottom: 1%;
+}
+.supplier_text{
+    font-size: 20px;
+    color: #401801;
+}
+.supplier_more{
+    padding: 1% 2%;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    background-color: #589EA6;
+    position: absolute;
+    right: 15%;
+    bottom: 5%;
+}
+.supplier_more a{
+    color: #F2E6D8;
+    text-decoration: none;
+}
+.supplier_more:hover{
+    background-color: #345259;
+    font-size: 22px;
+}

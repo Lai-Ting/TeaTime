@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+}
+
+html.body {
+    margin: 0;
+    padding: 0;
+    color: #333333;
+    font-family: 'Lato', 'Noto Sans TC', sans-serif;
+}
+
+div#body_Color {
+    background-color: #A68358;
+}
+
+main {
+    /* max-height: 100vh; */
+    /* min-height: 100vh; */
+    margin: 0 60px;
+    padding: 10px 20px;
+    background-color: #D2D9C7;
+}
+
+/* Header開始 */
+header {
+    margin: 0 60px;
+    padding: 20px 0 0;
+    font-size: 50px;
+    height: auto;
+    background-color: #A2A629;
+    color: #401801;
+    text-align: center;
+}
+.nav_Title {
+    margin: 0 40px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_Title a{
+    text-decoration: none;
+    color: #401801;
+}
+.title_Left {
+    font-weight: bold;
+}
+.title_Right {
+    display: flex;
+}
+
+.circle_User {
+    margin: 0 0 0 20px;
+    font-size: 35px;
+    align-self: center;
+}
+
+.circle_User>a>i {
+    color: #F2E6D8;
+}
+
+.Title_descript {
+    font-size: 20px;
+    text-align: left;
+}
+
+/* 下拉選單開始 */
+nav .drop_down_color {
+    position: relative;
+    justify-content: center;
+    background-color: #D9D5A0;
+    padding: 0;
+    height: 5vh;
+}
+ul.drop_down_menu {
+    position: relative;
+    list-style: none;
+    display: inline-block;
+}
+
+ul.drop_down_menu li {
+    position: relative;
+    white-space: nowrap;
+    list-style: none;
+    align-items: center;
+    text-align: left;
+}
+
+ul.drop_down_menu>li {
+    float: left;
+    /* 只有第一層是靠左對齊*/
+}
+
+ul.drop_down_menu a {
+    padding: 10px 30px;
+    font-size: 20px;
+    background-color: #D9D5A0;
+    color: #401801;
+    display: block;
+    text-decoration: none;
+    height: 5vh;
+}
+
+ul.drop_down_menu a:hover {
+    /* 滑鼠滑入按鈕變色*/
+    font-weight:700;
+    background-color: #F2E6D8;
+    border: #401801 1px solid;
+}
+
+ul.drop_down_menu li:hover>a {
+    /* 滑鼠移入次選單上層按鈕保持變色*/
+    background-color: #F2E6D8;
+}
+
+ul.drop_down_menu ul {
+    position: absolute;
+    z-index: 10;
+}
+
+.drop_down_menu ul ul {
+    /*第三層以後的選單出現位置與第二層不同*/
+    z-index: 20;
+    top: 0%;
+    left: 100%;
+}
+
+ul.drop_down_menu ul {
+    display: none;
+    /*隱藏次選單*/
+}
+
+ul.drop_down_menu li:hover>ul {
+    display: block;
+    /* 滑鼠滑入展開次選單*/
+}
+/* 下拉選單結束 */
+
+
+/* footer開始 */
+footer {
+    margin: 0 60px;
+    padding: 0 20px;
+    background-color: #345259;
+    text-align: center;
+}
+.foot{
+    display: flex;
+}
+.foot_content{
+    flex: 1;
+    text-align: left;
+    padding: 1%;
+}
+.foot p{
+    color: #F2E6D8;
+}
+.foot_content:first-child{
+    margin-left: 5%;
+}
+.foot_content>p.foot_title{
+    margin-bottom: 4%;
+    font-size: 23px;
+    font-weight: 700;
+}
+.foot_content p{
+    font-size: 15px;
+}
+.foot a {
+    text-decoration: none
+}
+.foot a>i {
+    color: #F2E6D8;
+}
+.foot_media i:hover{
+    color: #589EA6;
+    font-size: 30px;
+}
+.foot_map a{
+    font-size: 18px;
+    margin-left: 2%;
+    padding: 1%;
+    border: 2px solid #F2E6D8;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #F2E6D8;
+}
+.foot_map a:hover{
+    background-color:#F2E6D8 ;
+    color: #589EA6;
+}
+.foot_map a>i{
+    color: #589EA6;
+}
+.foot_media{
+    font-size: 25px;
+    margin-left: 3%;
+}
+.foot>.totop{
+    font-size: 40px;
+    bottom: 20px;
+    right: 10px;
+    position: fixed;
+}
+/* footer結束 */

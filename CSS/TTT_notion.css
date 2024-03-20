@@ -1,0 +1,56 @@
+main>div {
+    padding: 20px 20px 20px 60px;
+    border-bottom: 2px solid #A68358;
+}
+
+main>div:last-child {
+    border-bottom: none
+}
+
+.notion {
+    display: flex;
+}
+
+.notion_img img{
+    flex: 2;
+    width: 440px;
+}
+
+.notion_text {
+    flex: 3;
+    padding: 0 20px;
+    position: relative;
+}
+
+.notion_text h1,
+p {
+    color: #401801;
+    font-weight: bold;
+}
+
+.notion_text article {
+    margin: 20px 0;
+}
+
+.notion_text>div a {
+    padding: 10px 30px;
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 20px;
+    background-color: #D9D5A0;
+    color: #401801;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;
+    right: 5%;
+    transition: width 1s;
+    width: 8vw;
+    text-align: center;
+}
+
+.notion_text>div a:hover {
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #F2E6D8;
+    width: 10vw;
+}
